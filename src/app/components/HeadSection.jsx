@@ -15,7 +15,7 @@ const HeadSection = () => {
             <br />
             <TypeAnimation
               sequence={[
-                'Jason',
+                'Jason Tian',
                 1000,
                 'Front-end Developer',
                 1000,
