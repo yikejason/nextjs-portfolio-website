@@ -9,8 +9,8 @@ export async function POST(req, res) {
   console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: email,
+      from: fromEmail,
+      to: [fromEmail, email],
       subject: subject,
       react: (
         <>
@@ -26,4 +26,3 @@ export async function POST(req, res) {
     return NextResponse.json({ error });
   }
 }
-
