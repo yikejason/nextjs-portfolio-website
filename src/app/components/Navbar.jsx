@@ -28,7 +28,7 @@ const Navbar = () => {
           href={'/'}
           className="text-lg md:text-5xl text-white font-semibold"
         >
-          LOGO
+          {`JASON'S PORTFOLIO`}
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
