@@ -5,7 +5,7 @@ import LinkedinIcon from '../../../public/linkedin-icon.svg';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const EmailSection = () => {
+const ContactSection = () => {
   return (
     <section
       id="contact"
@@ -24,7 +24,7 @@ const EmailSection = () => {
           I&apos;ll try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/yikejason">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
           <Link href="linkedin.com">
@@ -36,5 +36,5 @@ const EmailSection = () => {
   );
 };
 
-export default EmailSection;
+export default ContactSection;
 
