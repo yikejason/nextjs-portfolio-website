@@ -11,29 +11,20 @@ const projectsData = [
     description: 'Project 1 description',
     image: '/images/projects/1.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/yikejason/nextjs-portfolio-website',
+    previewUrl: 'https://www.jasontianyu.com/',
   },
   {
     id: 2,
-    title: 'Food Ordering Application',
+    title: 'airport Application',
     description: 'Project 2 description',
-    image: '/images/projects/1.png',
-    tag: ['All', 'Mobile'],
-    gitUrl: '/',
-    previewUrl: '/',
-  },
-  {
-    id: 3,
-    title: 'Food Ordering Application',
-    description: 'Project 3 description',
-    image: '/images/projects/1.png',
+    image: '/images/projects/2.png',
     tag: ['All', 'Mobile'],
     gitUrl: '/',
     previewUrl: '/',
   },
 ];
-const tagData = ['All', 'Web'];
+const tagData = ['All', 'Web', 'Mobile'];
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState('All');
