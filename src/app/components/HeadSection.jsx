@@ -2,10 +2,20 @@
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
-1;
 import { motion } from 'framer-motion';
 
+const downloadUrl = '/person/resume.pdf';
+
 const HeadSection = () => {
+  const downLoadResume = (url) => {
+    const fileName = url.split('/').pop();
+    const tagA = document.createElement('a');
+    tagA.href = url;
+    tagA.setAttribute('download', fileName);
+    tagA.click();
+    tagA.remove();
+  };
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -43,7 +53,10 @@ const HeadSection = () => {
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 via-primary-500 to-secondary-500 lg:mt-0 bg-white hover:bg-slate-200 text-white">
               Hire Me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 via-primary-500 to-secondary-500 bg-transparent hover:bg-slate-800 text-white mt-3">
+            <button
+              className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 via-primary-500 to-secondary-500 bg-transparent hover:bg-slate-800 text-white mt-3"
+              onClick={() => downLoadResume(downloadUrl)}
+            >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
