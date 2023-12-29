@@ -60,7 +60,9 @@ const ContactSection = () => {
       </div>
       <div>
         {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">{emailSubmitted.title}</p>
+          <p className="text-green-500 text-xl mt-2">
+            Email sent successfully! I will be in contact with you soon.
+          </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <div className="mb-6">
