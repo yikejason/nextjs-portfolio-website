@@ -7,7 +7,6 @@ import Image from 'next/image';
 import emailjs from 'emailjs-com';
 const ContactSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const params = {
@@ -50,7 +49,7 @@ const ContactSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/yikejason" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
           <Link href="linkedin.com">
